@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>その消毒、次亜塩素で大丈夫ですか？｜水中除菌タブレット クリアンス（CREINS）</title>
+  <meta name="description" content="クリアンス（CREINS）は水に投入するだけで二酸化塩素を発生させる水中衛生管理タブレット。温浴施設・スポーツ施設をはじめ、全国100ヶ所以上の施設で導入されています。">
+  <meta name="keywords" content="レジオネラ属菌対策,二酸化塩素,クリアンス,CREINS,次亜塩素,温浴施設,水質衛生管理,バイオフィルム,pH">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+
+    :root {
+      --primary:    #5bc3ec;
+      --primary-sub:#2ca6e0;
+      --navy:       #084d9f;
+      --navy-mid:   #2b5ea8;
+      --aqua-bg:    rgba(91, 195, 236, 0.10);
+      --off-white:  #f7f7f7;
+      --light-blue: #fafafa;
+      --blue-gray:  #d4dfed;
+      --border:     #d9e7f1;
+      --border-mid: #c2d6e5;
+      --text:       #333333;
+      --text-mid:   #556270;
+      --text-light: #7f8a94;
+      --white:      #fff;
+      --green:      #1d7a4a;
+      --green-bg:   #eaf4ee;
+      --red:        #b03030;
+      --container:  1200px;
+      --section:    90px 0;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      overflow-x: hidden;
+      background: var(--white);
+    }
+
+    img { max-width: 100%; height: auto; display: block }
+    a { text-decoration: none; color: inherit }
+    strong { font-weight: 700 }
+
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 24px }
+
+    section { padding: var(--section) }
+
+    h2.section-title {
+      font-size: 2.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: .04em;
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+
+    .section-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      color: var(--text-light);
+      font-size: .9rem;
+      margin-bottom: 56px;
+      line-height: 1.7;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--primary);
+      margin: 16px 0 40px;
+    }
+
+    .divider.center { margin: 16px auto 40px }
+
+    /* ── Buttons ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      color: var(--white);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 62px 16px 36px;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+      box-shadow: 0 12px 32px rgba(91, 195, 236, .25);
+    }
+
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--primary);
+      box-shadow: none;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--primary);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: .9rem;
+      padding: 14px 58px 14px 32px;
+      border-radius: 999px;
+      border: 1.5px solid var(--primary);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-outline-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--white);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 62px 16px 36px;
+      border-radius: 999px;
+      border: 1.5px solid rgba(255,255,255,.6);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+    }
+
+    .btn-outline-white:hover {
+      background: var(--white);
+      color: var(--navy);
+      border-color: var(--white);
+    }
+
+    .btn-primary::after,
+    .btn-outline::after,
+    .btn-outline-white::after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      transform: translateY(-50%) rotate(45deg);
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+    }
+
+    .btn-primary-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      color: var(--navy);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 62px 16px 36px;
+      border-radius: 999px;
+      border: 1px solid var(--white);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, .14);
+    }
+
+    .btn-primary-light:hover {
+      background: transparent;
+      color: var(--white);
+      box-shadow: none;
+    }
+
+    .btn-primary-light::after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      transform: translateY(-50%) rotate(45deg);
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+    }
+
+    .floating-cta {
+      position: fixed;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 95;
+      width: 188px;
+      padding: 16px 16px 18px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.94);
+      border: 1px solid rgba(91, 195, 236, .35);
+      box-shadow: 0 20px 42px rgba(8, 77, 159, .14);
+      backdrop-filter: blur(10px);
+      transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+    }
+
+    .floating-cta.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-50%) translateX(12px);
+    }
+
+    .floating-cta-label {
+      display: block;
+      margin-bottom: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .64rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary-sub);
+    }
+
+    .floating-cta-copy {
+      font-size: .78rem;
+      line-height: 1.65;
+      color: var(--text-mid);
+      margin-bottom: 14px;
+    }
+
+    .floating-cta .btn-primary {
+      width: 100%;
+      min-height: 54px;
+      padding: 14px 52px 14px 24px;
+      font-size: .88rem;
+      white-space: nowrap;
+      box-shadow: 0 10px 24px rgba(91, 195, 236, .22);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(to bottom, rgba(255,255,255,.96), rgba(255,255,255,.88));
+      border-bottom: 1px solid rgba(217, 231, 241, .85);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 28px rgba(8, 77, 159, .06);
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .header-logo-main {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: .04em;
+    }
+
+    .header-logo-sub {
+      font-size: .72rem;
+      color: var(--text-light);
+      letter-spacing: .02em;
+    }
+
+    .header-right { display: flex; align-items: center; gap: 24px }
+
+    .header-tel {
+      font-size: .85rem;
+      color: var(--navy);
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .header-tel-label {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: .7rem;
+      color: var(--text-light);
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(91,195,236,.20), transparent 32%),
+        linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 48%, rgba(212,223,237,.55) 100%);
+      min-height: calc(100vh - 82px);
+      display: flex;
+      align-items: center;
+      padding: 56px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(380px, 1.1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text {
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(217, 231, 241, .9);
+      border-radius: 40px;
+      padding: 48px 44px;
+      box-shadow: 0 24px 54px rgba(8, 77, 159, .08);
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary-sub);
+      border: 1px solid var(--primary);
+      padding: 7px 16px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+      background: rgba(255,255,255,.75);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 4vw, 3.55rem);
+      font-weight: 900;
+      line-height: 1.35;
+      color: var(--navy);
+      letter-spacing: .02em;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 .accent { color: var(--primary-sub) }
+
+    .hero p.lead {
+      font-size: 1.03rem;
+      color: var(--text-mid);
+      line-height: 1.95;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+
+    .hero p.lead .lead-line { display: block }
+    .nowrap { white-space: nowrap }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(91, 195, 236, .35);
+    }
+
+    .hero-stat-item {}
+
+    .hero-stat-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--primary-sub);
+      line-height: 1;
+      display: block;
+    }
+
+    .hero-stat-unit {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .hero-stat-label {
+      font-size: .78rem;
+      color: var(--text-light);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    .hero-stat-note {
+      font-size: .68rem;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    .hero-stat-copy {
+      margin-top: 0;
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.8;
+      max-width: 220px;
+    }
+
+    /* Hero visual side */
+    .hero-visual { position: relative }
+
+    .hero-img-wrap {
+      border-radius: 44px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(8,77,159,.12), rgba(91,195,236,.26));
+      border: 1px solid rgba(255,255,255,.65);
+      box-shadow: 0 32px 64px rgba(8, 77, 159, .14);
+    }
+
+    .hero-img-placeholder {
+      height: 520px;
+      background: linear-gradient(160deg, rgba(8,77,159,.92), rgba(44,166,224,.88));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-img-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-stat-badge {
+      position: absolute;
+      bottom: 28px;
+      left: 28px;
+      background: var(--white);
+      border: 1px solid rgba(91, 195, 236, .35);
+      border-radius: 26px;
+      padding: 20px 26px;
+      box-shadow: 0 18px 40px rgba(0,0,0,.12);
+    }
+
+    .hero-stat-badge .num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+      display: block;
+    }
+
+    .hero-stat-badge .desc {
+      font-size: .75rem;
+      color: var(--text-mid);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .hero-cta-note {
+      margin-top: 16px;
+      font-size: .78rem;
+      color: var(--text-light);
+    }
+
+    /* ── Pain ── */
+    .pain { background: var(--white) }
+
+    .pain-intro {
+      max-width: 600px;
+      margin-bottom: 0;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 0;
+    }
+
+    .pain-card {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-bottom: 3px solid transparent;
+      border-radius: 28px;
+      padding: 40px 36px;
+      transition: background .2s, border-color .2s, transform .2s;
+    }
+
+    .pain-card:hover {
+      background: var(--white);
+      border-bottom-color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .pain-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: .12em;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .pain-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .pain-card p {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.9;
+    }
+
+    .pain-data-tag {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--primary-sub);
+      margin-bottom: 12px;
+    }
+
+    /* ── About ── */
+    .about { background: var(--off-white) }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .about-text p {
+      font-size: .95rem;
+      color: var(--text-mid);
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+
+    .about-features {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--white);
+      border-left: 3px solid var(--primary);
+      border-radius: 0 18px 18px 0;
+    }
+
+    .about-feature-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .about-feature-text {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    .about-feature-text strong {
+      color: var(--navy);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .about-img-wrap {
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    /* ── Compare ── */
+    .compare { background: var(--white) }
+
+    .compare-header {
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    .compare-table-wrap { overflow-x: auto }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+    }
+
+    .compare-table th {
+      padding: 16px 20px;
+      text-align: center;
+      font-weight: 700;
+      font-size: .82rem;
+      letter-spacing: .04em;
+    }
+
+    .compare-table th:first-child { text-align: left }
+
+    .compare-table thead tr {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .compare-table thead th.col-creins {
+      background: var(--primary);
+    }
+
+    .compare-table tbody td {
+      padding: 16px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-mid);
+      vertical-align: middle;
+    }
+
+    .compare-table tbody td:first-child {
+      text-align: left;
+      font-weight: 700;
+      color: var(--navy);
+      font-size: .88rem;
+    }
+
+    .compare-table tbody tr:hover td { background: var(--off-white) }
+
+    .compare-table .col-creins {
+      background: rgba(91, 195, 236, 0.12);
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .compare-table .col-creins:hover { background: rgba(91, 195, 236, 0.18) }
+
+    .val-good { color: var(--green); font-weight: 700 }
+    .val-bad  { color: var(--red); font-weight: 500 }
+    .val-mid  { color: var(--text-mid); font-weight: 500 }
+
+    .val-good::before { content: '○ '; font-size: .85em }
+    .val-bad::before  { content: '△ '; font-size: .85em }
+
+    .compare-note {
+      font-size: .75rem;
+      color: var(--text-light);
+      margin-top: 14px;
+      text-align: right;
+    }
+
+    /* ── Science ── */
+    .science { background: var(--white); }
+
+    .science-inner {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .science-text p {
+      font-size: .93rem;
+      line-height: 2;
+      color: var(--text-mid);
+      margin-bottom: 20px;
+    }
+
+    .science-note {
+      font-size: .75rem;
+      color: var(--text-light);
+      margin-top: 24px;
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    /* pH Chart */
+    .ph-chart {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 32px 28px;
+      border-radius: 32px;
+      box-shadow: 0 14px 32px rgba(8, 77, 159, .05);
+    }
+
+    .ph-chart-title {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+
+    .ph-row {
+      display: grid;
+      grid-template-columns: 52px 1fr 52px;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .ph-row-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .75rem;
+      color: var(--text-mid);
+      text-align: right;
+    }
+
+    .ph-bar-bg {
+      height: 24px;
+      background: rgb(212, 223, 237);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ph-bar-fill {
+      height: 100%;
+      transition: width .8s ease;
+    }
+
+    .ph-bar-fill.c-high { background: var(--primary-sub) }
+    .ph-bar-fill.c-mid  { background: #8cc9e6 }
+    .ph-bar-fill.c-low  { background: var(--navy-mid) }
+
+    .ph-row-val {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .ph-chart-source {
+      font-size: .7rem;
+      color: var(--text-light);
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    /* ── Case Study ── */
+    .case { background: var(--off-white) }
+
+    .case-inner {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      overflow: hidden;
+    }
+
+    .case-header {
+      background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .case-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.5);
+      border: 1px solid rgba(255,255,255,.2);
+      padding: 4px 10px;
+      white-space: nowrap;
+    }
+
+    .case-header h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .case-body { padding: 40px }
+
+    .case-detail-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .88rem;
+      margin-bottom: 40px;
+    }
+
+    .case-detail-table tr { border-bottom: 1px solid var(--border) }
+
+    .case-detail-table th {
+      width: 180px;
+      padding: 14px 20px;
+      text-align: left;
+      font-weight: 700;
+      color: var(--navy);
+      background: var(--off-white);
+      font-size: .83rem;
+      vertical-align: top;
+    }
+
+    .case-detail-table td {
+      padding: 14px 20px;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+
+    .case-timeline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    .case-step {
+      padding: 28px 24px;
+      position: relative;
+      border-right: 1px solid var(--border);
+    }
+
+    .case-step:last-child { border-right: none }
+
+    .case-step-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .case-step h4 {
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .case-step p {
+      font-size: .84rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+
+    .case-result {
+      border: 1.5px solid var(--green);
+      background: var(--green-bg);
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .case-result-check {
+      width: 32px;
+      height: 32px;
+      background: var(--green);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .case-result h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+
+    .case-result p {
+      font-size: .86rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+
+    .case-disclaimer {
+      font-size: .74rem;
+      color: var(--text-light);
+      margin-top: 16px;
+      padding: 12px 16px;
+      background: var(--off-white);
+      border-left: 2px solid var(--border-mid);
+      line-height: 1.7;
+    }
+
+    /* ── Scenes ── */
+    .scenes { background: var(--white) }
+
+    .scenes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .scene-card {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      overflow: hidden;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      background: var(--white);
+    }
+    .scene-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 18px 36px rgba(8, 77, 159, .07);
+    }
+
+    .scene-img {
+      height: 200px;
+      background: linear-gradient(180deg, rgba(212,223,237,.65), rgba(250,250,250,1));
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scene-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .scene-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .scene-img-placeholder svg {
+      opacity: .35;
+    }
+
+    .scene-img-placeholder span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+
+    .scene-body { padding: 24px }
+
+    .scene-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .scene-body p { font-size: .85rem; color: var(--text-mid); line-height: 1.8 }
+
+    /* ── Reasons ── */
+    .reasons { background: var(--off-white) }
+
+    .reasons-header { max-width: 600px; margin-bottom: 0 }
+
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 0;
+    }
+
+    .reason-card {
+      background: var(--white);
+      padding: 36px 32px;
+      border: 1px solid var(--border);
+      border-bottom: 3px solid var(--border);
+      border-radius: 28px;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .reason-card:hover {
+      border-bottom-color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .reason-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .reason-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .reason-card p { font-size: .88rem; color: var(--text-mid); line-height: 1.9 }
+
+    .reasons-proof {
+      margin-top: 40px;
+    }
+
+    .reasons-proof-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .reasons-proof-note {
+      font-size: .82rem;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    /* ── Results ── */
+    .results { background: var(--white) }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .result-card {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px 28px;
+      transition: background .2s, transform .2s, border-color .2s;
+    }
+
+    .result-card:hover {
+      background: var(--white);
+      transform: translateY(-3px);
+      border-color: var(--primary);
+    }
+
+    .result-card .company {
+      font-size: .75rem;
+      color: var(--text-light);
+      margin-bottom: 6px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .result-card .name {
+      font-size: .98rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+
+    /* ── CTA Banner ── */
+    .cta-banner {
+      background:
+        linear-gradient(rgba(8,77,159,.84), rgba(44,166,224,.72)),
+        url('https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins_img-1024x723.webp') center/cover;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .cta-banner .section-label { color: rgba(255,255,255,.78); margin-bottom: 20px }
+
+    .cta-banner h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+
+    .cta-banner p {
+      font-size: .95rem;
+      color: rgba(255,255,255,.88);
+      margin-bottom: 40px;
+    }
+
+    .cta-banner-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* ── Flow ── */
+    .flow { background: var(--off-white) }
+
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+
+    .flow-grid::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: calc(12.5% + 12px);
+      right: calc(12.5% + 12px);
+      height: 1px;
+      background: var(--border);
+      z-index: 0;
+    }
+
+    .flow-step {
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .flow-num {
+      width: 56px;
+      height: 56px;
+      border: 1.5px solid var(--primary);
+      color: var(--navy);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--off-white);
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(91, 195, 236, .18);
+    }
+
+    .flow-step h3 {
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .flow-step p { font-size: .82rem; color: var(--text-light); line-height: 1.7 }
+
+    /* ── FAQ ── */
+    .faq { background: var(--white) }
+
+    .faq-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--off-white);
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 22px 58px 22px 24px;
+      position: relative;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none }
+
+    .faq-item summary::before,
+    .faq-item summary::after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      width: 16px;
+      height: 2px;
+      background: var(--primary-sub);
+      transform: translateY(-50%);
+      transition: transform .2s ease;
+    }
+
+    .faq-item summary::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .faq-item[open] summary::after {
+      transform: translateY(-50%) rotate(0deg);
+    }
+
+    .faq-answer {
+      padding: 0 24px 22px;
+      font-size: .92rem;
+      color: var(--text-mid);
+      line-height: 1.9;
+      background: var(--white);
+    }
+
+    /* ── Form ── */
+    .form-section {
+      background: var(--off-white);
+      padding: var(--section);
+      scroll-margin-top: 108px;
+    }
+
+    .form-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 18px 40px rgba(8, 77, 159, .05);
+    }
+
+    .form-wrap-header {
+      padding: 40px 40px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .form-wrap-header h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .form-wrap-header p {
+      font-size: .88rem;
+      color: var(--text-light);
+    }
+
+    .form-wrap iframe { display: block }
+
+    .form-download {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .form-download a {
+      font-size: .88rem;
+      color: var(--navy);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,.82);
+      padding: 56px 0 40px;
+      font-size: .83rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,.24);
+    }
+
+    .footer-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: .04em;
+    }
+
+    .footer-address { line-height: 1.8 }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.82);
+      transition: color .2s;
+      font-size: .82rem;
+    }
+
+    .footer-links a:hover { color: var(--white) }
+
+    .footer-copy {
+      text-align: center;
+      padding-top: 28px;
+      font-size: .75rem;
+      color: rgba(255,255,255,.72);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* ── Spacing helpers ── */
+    .mt-56 { margin-top: 56px }
+    .text-center { text-align: center }
+
+    /* ── Responsive ── */
+    @media(max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 48px }
+      .hero-visual { display: none }
+      .hero-text { padding: 36px 28px }
+      .about-inner { grid-template-columns: 1fr; gap: 48px }
+      .science-inner { grid-template-columns: 1fr; gap: 48px }
+      .reasons-grid { grid-template-columns: 1fr }
+      .results-grid { grid-template-columns: repeat(2, 1fr) }
+      .flow-grid { grid-template-columns: repeat(2, 1fr); gap: 32px }
+      .flow-grid::before { display: none }
+      .case-timeline { grid-template-columns: 1fr }
+      .case-step { border-right: none; border-bottom: 1px solid var(--border) }
+      .case-step:last-child { border-bottom: none }
+    }
+
+    @media(max-width: 768px) {
+      :root { --section: 72px 0 }
+      body { padding-bottom: 92px }
+      h2.section-title { font-size: 1.7rem }
+      .hero { min-height: auto; padding: 64px 0 }
+      .hero h1 { font-size: 1.9rem }
+      .hero-stats { gap: 24px; flex-wrap: wrap }
+      .hero-actions { flex-direction: column; align-items: stretch }
+      .btn-primary, .btn-outline, .btn-outline-white, .btn-primary-light { width: 100% }
+      .pain-grid { grid-template-columns: 1fr }
+      .scenes-grid { grid-template-columns: 1fr }
+      .compare-table th, .compare-table td { padding: 12px 14px; font-size: .82rem }
+      .case-body { padding: 24px }
+      .case-header { padding: 20px 24px; flex-wrap: wrap }
+      .form-wrap-header { padding: 28px 24px 20px }
+      .footer-inner { flex-direction: column; gap: 32px }
+      .header-tel { display: none }
+      .reasons-grid { grid-template-columns: 1fr }
+      .results-grid { grid-template-columns: 1fr }
+      .flow-grid { grid-template-columns: 1fr }
+      .cta-banner-actions { flex-direction: column }
+      .floating-cta {
+        top: auto;
+        right: 12px;
+        left: 12px;
+        bottom: 12px;
+        width: auto;
+        padding: 12px;
+        transform: none;
+        border-radius: 20px;
+      }
+      .floating-cta.is-hidden {
+        transform: translateY(12px);
+      }
+      .floating-cta-copy {
+        display: none;
+      }
+      .floating-cta .btn-primary {
+        min-height: 50px;
+        padding: 14px 48px 14px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <aside class="floating-cta" id="floatingCta" aria-label="固定お問い合わせ導線">
+    <span class="floating-cta-label">Contact</span>
+    <p class="floating-cta-copy">比較検討中でも資料請求・ご相談いただけます。</p>
+    <a href="#order" class="btn-primary">フォームへ進む</a>
+  </aside>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#top" class="header-logo">
+        <span class="header-logo-main">Three Benefits</span>
+        <span class="header-logo-sub">スリーベネフィッツ株式会社</span>
+      </a>
+      <div class="header-right">
+        <div>
+          <span class="header-tel-label">お電話でのお問い合わせ</span>
+          <span class="header-tel">03-6453-6905</span>
+        </div>
+        <a href="#order" class="btn-outline" style="padding:10px 50px 10px 24px;font-size:.85rem;">資料請求・ご相談</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Text column -->
+        <div class="hero-text">
+          <span class="hero-tag">Water Hygiene Management</span>
+          <h1>
+            その消毒、<br>
+            次亜塩素で<br>
+            <span class="accent">大丈夫ですか？</span>
+          </h1>
+          <p class="lead">
+            <span class="lead-line">アルカリ性の温泉水（pH8.0）では、塩素の効果は</span>
+            <span class="lead-line"><strong>約24%まで低下</strong>します。クリアンスが発生させる<span class="nowrap">二酸化塩素</span>は、pHの影響をほとんど受けません。</span>
+            <span class="lead-line">不幸な事故なく安心して運営できる施設にしましょう。</span>
+          </p>
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">24<span class="hero-stat-unit">%</span></span>
+              <p class="hero-stat-label">pH8.0における<br>次亜塩素酸の有効成分残存率</p>
+              <p class="hero-stat-note">※ 公知の化学特性データに基づく参考値</p>
+            </div>
+            <div class="hero-stat-item">
+              <p class="hero-stat-label hero-stat-copy">スポーツ施設、<br>温泉施設などの衛生管理に活用</p>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#order" class="btn-primary">資料請求・ご相談</a>
+            <a href="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins.pdf" target="_blank" class="btn-outline">カタログを見る</a>
+          </div>
+          <p class="hero-cta-note">ご注文前の比較検討・資料確認だけでもご利用いただけます。</p>
+        </div>
+
+        <!-- Visual column -->
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <div class="hero-img-placeholder">
+              <img
+                src="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins_img-1024x723.webp"
+                alt="水中除菌タブレット クリアンス"
+                onerror="this.style.display='none'">
+            </div>
+          </div>
+          <div class="hero-stat-badge" style="display:none;">
+            <span class="num">ClO<sub style="font-size:1rem">2</sub></span>
+            <p class="desc">pHに依存しない<br>二酸化塩素</p>
+          </div>
+          <div class="hero-stat-badge">
+            <span class="num">100ヶ所<span style="font-size:.9rem;font-weight:400;">以上</span></span>
+            <p class="desc">全国の施設で導入<br>（CLOX社調べ）</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pain -->
+  <section class="pain" id="pain">
+    <div class="container">
+      <div class="pain-intro">
+        <p class="section-label">Problem</p>
+        <h2 class="section-title">その水質管理、<br>本当に届いていますか？</h2>
+        <div class="divider"></div>
+        <p class="section-sub" style="margin-bottom:48px;">施設管理者が見落としがちな4つのリスク</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <span class="pain-num">01 &nbsp;—&nbsp; pH Problem</span>
+          <div class="pain-data-tag">pH8.0 → 残存率 24%</div>
+          <h3>塩素の「死角」はpHにある</h3>
+          <p>pH8.0では次亜塩素酸ナトリウムの有効成分は約24%、pH8.5ではわずか9.1%まで低下します。正しく塩素を投入していても、アルカリ性の温泉水では十分な効果が得られないケースがあります。</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-num">02 &nbsp;—&nbsp; Biofilm</span>
+          <h3>バイオフィルムの内側には届かない</h3>
+          <p>循環配管の内壁に形成されるバイオフィルムは、通常の塩素処理では内部まで届きにくい構造を持ちます。レジオネラ属菌はこの内側に潜み、通常の塩素管理では除去が難しい状態になることがあります。</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-num">03 &nbsp;—&nbsp; Compliance Risk</span>
+          <h3>管理基準を守っていても検出される</h3>
+          <p>奈良県の温浴施設では、月次検査・年3〜4回の配管洗浄を実施していながら、レジオネラ属菌が繰り返し検出されました。基準を上回る管理でも、水質によっては限界があります。（奈良県保健所公表資料より）</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-num">04 &nbsp;—&nbsp; Liability</span>
+          <h3>「塩素は入れていました」では済まない</h3>
+          <p>レジオネラ属菌が検出された際、使用している消毒剤が施設の水質環境に適していなかった場合、施設運営者の管理責任が問われ続ける可能性があります。水質に合った対策の選択が求められています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+
+        <div class="about-text">
+          <p class="section-label">Product</p>
+          <h2 class="section-title">水中除菌タブレット<br>クリアンス（CREINS）</h2>
+          <div class="divider"></div>
+          <p>クリアンスは、水に投入するだけで二酸化塩素（ClO₂）を発生させる水中衛生管理タブレットです。</p>
+          <p>二酸化塩素はpHの影響をほとんど受けないという特性を持ちます。アルカリ性の温泉水やアルカリ性の硬水を使用する環境でも、安定した水質衛生管理が可能です。</p>
+          <p>タブレット形状のため保管・管理が簡単で、特別な設備改修や専門資格も必要ありません。</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <svg class="about-feature-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="9" stroke="#2ca6e0" stroke-width="1.5"/>
+                <polyline points="6,10.5 9,13.5 14,7.5" stroke="#2ca6e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="about-feature-text">
+                <strong>タブレット形状で取り扱いが簡単</strong>
+                水に投入するだけ。特別な設備・装置は不要です。
+              </div>
+            </div>
+            <div class="about-feature">
+              <svg class="about-feature-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="9" stroke="#2ca6e0" stroke-width="1.5"/>
+                <polyline points="6,10.5 9,13.5 14,7.5" stroke="#2ca6e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="about-feature-text">
+                <strong>pHに依存しない水質衛生管理</strong>
+                アルカリ性温泉での使用実績があります。
+              </div>
+            </div>
+            <div class="about-feature">
+              <svg class="about-feature-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="9" stroke="#2ca6e0" stroke-width="1.5"/>
+                <polyline points="6,10.5 9,13.5 14,7.5" stroke="#2ca6e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="about-feature-text">
+                <strong>一般財団法人 日本食品分析センターで試験実施済み</strong>
+                試験結果の詳細はお問い合わせにてご確認いただけます。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-img-wrap">
+          <img
+            src="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins_img-1024x723.webp"
+            alt="クリアンス製品画像"
+            onerror="this.parentElement.style.background='#dde8ef';this.parentElement.style.height='320px'">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Science -->
+  <section class="science" id="science">
+    <div class="container">
+      <p class="section-label">Science</p>
+      <h2 class="section-title">アルカリ性水質で次亜塩素が効きにくい理由</h2>
+      <div class="divider"></div>
+      <div class="science-inner mt-56">
+
+        <div class="science-text">
+          <p>次亜塩素酸ナトリウム（塩素系消毒剤）の有効成分である次亜塩素酸（HOCl）は、水のpHに強く影響を受けます。アルカリ性になるほど有効成分の割合が著しく低下し、pH8.5では元の約9%しか残りません。</p>
+          <p>多くの天然温泉は重炭酸塩を含み、加温によって自然にアルカリ性へと変化します。このため、正しく塩素を投入していても、水質によっては管理効果が思うように得られないケースがあります。</p>
+          <p>二酸化塩素（ClO₂）はpHの影響をほとんど受けないため、アルカリ性の温泉水やアルカリ性硬水を使用する環境での水質衛生管理に適しています。また、強い酸化力によりバイオフィルム内部への浸透性が高いことも特徴のひとつです。</p>
+          <p class="science-note">グラフ・数値は公知の化学特性データに基づく参考値です。試験条件や水質環境により異なります。効果を保証するものではありません。</p>
+        </div>
+
+        <div class="ph-chart">
+          <p class="ph-chart-title">pH別 次亜塩素酸 有効成分残存率（参考値）</p>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 7.0</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-high" style="width:76%"></div></div>
+            <div class="ph-row-val">76%</div>
+          </div>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 7.5</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-mid" style="width:50%"></div></div>
+            <div class="ph-row-val">50%</div>
+          </div>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 8.0</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-low" style="width:24%"></div></div>
+            <div class="ph-row-val">24%</div>
+          </div>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 8.5</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-low" style="width:9.1%"></div></div>
+            <div class="ph-row-val">9.1%</div>
+          </div>
+          <p class="ph-chart-source">公知の化学特性データに基づく参考値<br>効果を保証するものではありません</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Compare -->
+  <section class="compare" id="compare">
+    <div class="container">
+      <div class="compare-header">
+        <p class="section-label">Comparison</p>
+        <h2 class="section-title">他の水質管理剤との比較</h2>
+        <div class="divider"></div>
+        <p class="section-sub" style="margin-bottom:0;">主な水質衛生管理製品の特性比較</p>
+      </div>
+      <div class="compare-table-wrap mt-56">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>比較項目</th>
+              <th>次亜塩素酸ナトリウム</th>
+              <th>過酸化水素</th>
+              <th class="col-creins">クリアンス（ClO₂）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>pH依存性</td>
+              <td><span class="val-bad">高い</span><br><small style="color:#aaa;font-size:.75rem">pH8で約24%に低下</small></td>
+              <td><span class="val-good">低い</span></td>
+              <td class="col-creins"><span class="val-good">低い</span></td>
+            </tr>
+            <tr>
+              <td>バイオフィルムへの浸透性</td>
+              <td><span class="val-bad">低い</span></td>
+              <td><span class="val-good">高い</span></td>
+              <td class="col-creins"><span class="val-good">高い</span></td>
+            </tr>
+            <tr>
+              <td>取り扱い資格</td>
+              <td><span class="val-good">不要</span></td>
+              <td><span class="val-bad">要専門知識</span><br><small style="color:#aaa;font-size:.75rem">高濃度は危険物</small></td>
+              <td class="col-creins"><span class="val-good">不要</span></td>
+            </tr>
+            <tr>
+              <td>コスト</td>
+              <td><span class="val-good">低い</span></td>
+              <td><span class="val-bad">高い</span></td>
+              <td class="col-creins"><span class="val-mid">中程度</span></td>
+            </tr>
+            <tr>
+              <td>アルカリ性温泉での適性</td>
+              <td><span class="val-bad">低い</span></td>
+              <td><span class="val-good">高い</span></td>
+              <td class="col-creins"><span class="val-good">高い</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-note">※ 各特性は公知情報および第三者試験データに基づく参考比較です。施設環境・使用条件により異なります。</p>
+    </div>
+  </section>
+
+
+
+  <!-- Scenes -->
+  <section class="scenes" id="scenes">
+    <div class="container">
+      <p class="section-label">Applications</p>
+      <h2 class="section-title">こんな現場で使われています</h2>
+      <div class="divider"></div>
+      <p class="section-sub">さまざまな施設の水質衛生管理にご活用いただけます</p>
+      <div class="scenes-grid">
+
+        <div class="scene-card">
+          <div class="scene-img">
+            <div class="scene-img-placeholder" style="background:#e4eef4;">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="28" width="40" height="12" rx="2" stroke="#9ab0c0" stroke-width="1.5"/>
+                <path d="M8 28 C12 18, 16 14, 24 14 C32 14, 36 18, 40 28" stroke="#9ab0c0" stroke-width="1.5" fill="none"/>
+                <path d="M16 28 C18 23, 20 21, 24 21 C28 21, 30 23, 32 28" stroke="#9ab0c0" stroke-width="1.5" fill="none"/>
+                <line x1="24" y1="8" x2="24" y2="14" stroke="#9ab0c0" stroke-width="1.5"/>
+                <circle cx="24" cy="6" r="2" stroke="#9ab0c0" stroke-width="1.5"/>
+              </svg>
+              <span>温浴施設</span>
+            </div>
+          </div>
+          <div class="scene-body">
+            <h3>温浴施設</h3>
+            <p>大浴場・露天風呂など、アルカリ性温泉を使用する施設のレジオネラ属菌対策として。</p>
+          </div>
+        </div>
+
+        <div class="scene-card">
+          <div class="scene-img">
+            <div class="scene-img-placeholder" style="background:#e4eef4;">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="24" width="36" height="16" rx="2" stroke="#9ab0c0" stroke-width="1.5"/>
+                <path d="M10 24 L10 20 Q14 12 24 12 Q34 12 38 20 L38 24" stroke="#9ab0c0" stroke-width="1.5" fill="none"/>
+                <line x1="6" y1="32" x2="42" y2="32" stroke="#9ab0c0" stroke-width="1"/>
+                <circle cx="16" cy="28" r="2.5" stroke="#9ab0c0" stroke-width="1.5"/>
+                <circle cx="32" cy="28" r="2.5" stroke="#9ab0c0" stroke-width="1.5"/>
+              </svg>
+              <span>プール・スポーツ施設</span>
+            </div>
+          </div>
+          <div class="scene-body">
+            <h3>プール・スポーツ施設</h3>
+            <p>スイミングスクール・スポーツ施設での水質衛生管理に。</p>
+          </div>
+        </div>
+
+        <div class="scene-card">
+          <div class="scene-img">
+            <div class="scene-img-placeholder" style="background:#e4eef4;">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="28" width="32" height="12" rx="1" stroke="#9ab0c0" stroke-width="1.5"/>
+                <path d="M12 28 L12 22 L36 22 L36 28" stroke="#9ab0c0" stroke-width="1.5" fill="none"/>
+                <path d="M18 22 L18 16 M30 22 L30 16" stroke="#9ab0c0" stroke-width="1.5"/>
+                <ellipse cx="24" cy="15" rx="8" ry="4" stroke="#9ab0c0" stroke-width="1.5"/>
+                <line x1="14" y1="34" x2="34" y2="34" stroke="#9ab0c0" stroke-width="1"/>
+              </svg>
+              <span>畜産施設</span>
+            </div>
+          </div>
+          <div class="scene-body">
+            <h3>畜産施設</h3>
+            <p>鳥インフルエンザ・豚コレラ対策が課題となる飲水ラインの衛生管理に。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Reasons -->
+  <section class="reasons" id="reasons">
+    <div class="container">
+      <div class="reasons-header">
+        <p class="section-label">Why CREINS</p>
+        <h2 class="section-title">選ばれる3つの理由</h2>
+        <div class="divider"></div>
+        <p class="section-sub">多くの施設でご導入いただいている理由をご紹介します</p>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <span class="reason-num">01 &nbsp;—&nbsp; Simple</span>
+          <h3>水に入れるだけ</h3>
+          <p>タブレットを水に投入するだけで使用できます。特別な設備改修や専門資格は不要。既存の循環システムをそのままご利用いただけます。</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">02 &nbsp;—&nbsp; pH Independent</span>
+          <p>アルカリ性温泉での使用実績があります。次亜塩素酸では十分な効果が得られにくい環境での水質衛生管理に活用いただいています。</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">03 &nbsp;—&nbsp; Tested</span>
+          <h3>第三者試験実施済み</h3>
+          <p>一般財団法人 日本食品分析センターにて試験を実施しています。試験結果の詳細はお問い合わせ・カタログ請求にてご確認いただけます。</p>
+        </div>
+      </div>
+      <div class="reasons-proof">
+        <p class="reasons-proof-title">全国100ヶ所以上の施設で導入</p>
+        <div class="results-grid">
+          <div class="result-card">
+            <p class="company">東京建物リゾート株式会社</p>
+            <p class="name">おふろの王様 花小金井店</p>
+          </div>
+          <div class="result-card">
+            <p class="company">東京建物リゾート株式会社</p>
+            <p class="name">おふろの王様 狛江店</p>
+          </div>
+          <div class="result-card">
+            <p class="company">株式会社クリエイトL&amp;S</p>
+            <p class="name">湯快爽快 ちがさき店</p>
+          </div>
+          <div class="result-card">
+            <p class="company">株式会社ニュー</p>
+            <p class="name">天然温泉源泉の湯</p>
+          </div>
+          <div class="result-card">
+            <p class="company">タイムズ24株式会社</p>
+            <p class="name">Times SPA RESTA</p>
+          </div>
+          <div class="result-card">
+            <p class="company">株式会社創裕</p>
+            <p class="name">そそら温泉グループ（全国9店舗）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Flow -->
+  <section class="flow" id="flow">
+    <div class="container">
+      <p class="section-label">Process</p>
+      <h2 class="section-title">ご注文・ご利用までの流れ</h2>
+      <div class="divider"></div>
+      <p class="section-sub">かんたん4ステップでスタートできます</p>
+      <div class="flow-grid">
+        <div class="flow-step">
+          <div class="flow-num">01</div>
+          <h3>フォームより<br>お問い合わせ</h3>
+          <p>下記フォームからお気軽にご連絡ください</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">02</div>
+          <h3>お見積り・<br>ご提案</h3>
+          <p>担当よりお見積りと利用方法をご提案</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">03</div>
+          <h3>ご発注</h3>
+          <p>ご注文確定後、迅速にお届けいたします</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">04</div>
+          <h3>ご利用開始</h3>
+          <p>投入するだけで簡単にスタートできます</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2>施設の水質に合った衛生管理を、<br>落ち着いて比較できる状態に。</h2>
+      <p>まずは資料確認やご相談から。施設条件に応じた使い方や導入イメージをご案内します。</p>
+      <div class="cta-banner-actions">
+        <a href="#order" class="btn-primary-light">資料請求・ご相談</a>
+        <a href="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins.pdf" target="_blank" class="btn-outline-white">カタログ請求（PDF）</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="form-section" id="order">
+    <div class="container">
+      <div class="form-wrap">
+        <div class="form-wrap-header">
+          <h2>資料請求・ご相談・ご注文</h2>
+          <p>比較検討中の段階でもご利用いただけます。施設条件を確認のうえ、担当者よりご連絡いたします。</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+          width="100%"
+          height="900"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          style="display:block;"
+          title="クリアンス 資料請求・ご相談フォーム"
+          loading="lazy">
+          読み込んでいます...
+        </iframe>
+      </div>
+      <div class="form-download">
+        <a href="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins.pdf" target="_blank">カタログダウンロード（PDF）</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-wrap">
+        <p class="section-label text-center">FAQ</p>
+        <h2 class="section-title text-center">導入前によくあるご質問</h2>
+        <div class="divider center"></div>
+        <p class="section-sub text-center">「まずは確認したい」という段階で気になりやすいポイントをまとめました</p>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>次亜塩素酸ナトリウムを使っている施設でも切り替えを検討すべきですか？</summary>
+            <div class="faq-answer">
+              はい。特にアルカリ性温泉や、配管内のバイオフィルムが課題になりやすい環境では、次亜塩素酸だけでは十分な管理効果が得られにくい場合があります。現在の水質条件や運用方法を踏まえて、切り替えか併用かをご相談いただく形が現実的です。
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>特別な設備改修や資格は必要ですか？</summary>
+            <div class="faq-answer">
+              クリアンスは水に投入して使用するタブレット型のため、特別な設備改修や専門資格を前提としない運用が可能です。実際の使用方法は施設規模や対象設備によって変わるため、導入前に条件確認をおすすめします。
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>どの施設でも同じ効果が出ますか？</summary>
+            <div class="faq-answer">
+              水質、配管状態、循環条件、既存の衛生管理方法によって結果は変わります。本LPの数値や事例は導入判断の参考情報です。施設ごとの条件に応じて、使用方法や期待値を整理したうえでご案内します。
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>まずは資料だけ欲しいのですが可能ですか？</summary>
+            <div class="faq-answer">
+              可能です。カタログ請求のみでも問題ありません。比較検討中の段階でもご利用いただけるようにしていますので、導入前提でなくてもお気軽にお問い合わせください。
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-logo">Three Benefits</p>
+          <p class="footer-address">
+            スリーベネフィッツ株式会社<br>
+            〒105-0014 東京都港区芝3-22-7 芝NKビル3階<br>
+            TEL: 03-6453-6905　FAX: 03-6453-6906
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.3benefits.jp/" target="_blank">トップページ</a>
+          <a href="https://www.3benefits.jp/about/" target="_blank">会社情報</a>
+          <a href="https://www.3benefits.jp/privacypolicy/" target="_blank">プライバシーポリシー</a>
+          <a href="https://www.3benefits.jp/inquiry/" target="_blank">お問い合わせ</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2024 Three Benefits Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    const floatingCta = document.getElementById('floatingCta');
+    const orderSection = document.getElementById('order');
+    const heroSection = document.getElementById('top');
+
+    if (floatingCta && orderSection && 'IntersectionObserver' in window) {
+      const floatingState = {
+        heroVisible: false,
+        orderVisible: false
+      };
+
+      const syncFloatingCta = () => {
+        const shouldHide = floatingState.orderVisible || (window.innerWidth > 768 && floatingState.heroVisible);
+        floatingCta.classList.toggle('is-hidden', shouldHide);
+      };
+
+      const toggleFloatingCta = entries => {
+        entries.forEach(entry => {
+          if (entry.target === orderSection) {
+            floatingState.orderVisible = entry.isIntersecting;
+          }
+
+          if (entry.target === heroSection) {
+            floatingState.heroVisible = entry.isIntersecting;
+          }
+        });
+
+        syncFloatingCta();
+      };
+
+      const observer = new IntersectionObserver(toggleFloatingCta, {
+        threshold: 0.2
+      });
+
+      if (heroSection) observer.observe(heroSection);
+      observer.observe(orderSection);
+      window.addEventListener('resize', syncFloatingCta);
+    }
+  </script>
+
+</body>
+</html>
